@@ -4,7 +4,7 @@ import { env } from "./env/index";
 console.log(env.DATABASE_URL);
 export const config: Knex.Config = {
 	client: env.DATABASE_CLIENT,
-	connection: env.DATABASE_CLIENT === "sqlite"? {
+	connection: env.DATABASE_CLIENT === "SQLITE"? {
 		filename: env.DATABASE_URL
 	}: env.DATABASE_URL,
 	useNullAsDefault: true,
