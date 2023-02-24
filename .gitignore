@@ -4,3 +4,5 @@ test
 .env.test
 .vscode
 dist
+
+db/*.db
